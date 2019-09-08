@@ -1,14 +1,10 @@
 import sys
 import pandas as pd
 
+from defs import StationCol
 
-class StationCol:
-    id = "station_id"
-    lat = "station_latitude"
-    lon = "station_longitude"
-    ele = "station_elevation"
 
-station_cols = ["station_id", "station_latitude", "station_longitude"]
+station_cols = StationCol._all()
 
 
 def stations_seen(trips: pd.DataFrame) -> pd.DataFrame:
