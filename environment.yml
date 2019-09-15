@@ -1,0 +1,10 @@
+name: citybike
+dependencies:
+  - python=3.7
+  - pandas=0.24.
+  - OWSLib
+  - pip
+  - pip:
+      - rasterio
+      - aggdraw
+      - pillow
